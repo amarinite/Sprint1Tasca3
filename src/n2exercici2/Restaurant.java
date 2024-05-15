@@ -1,6 +1,6 @@
-package n2exercici1;
+package n2exercici2;
 
-public class Restaurant {
+public class Restaurant  {
     private String name;
     private int points;
 
@@ -17,8 +17,4 @@ public class Restaurant {
         return this.points;
     }
 
-    public boolean isEqual(Restaurant res)
-    {
-        return (res.getPoints() == this.points) && (res.getName().equalsIgnoreCase(this.name));
-    }
 }
