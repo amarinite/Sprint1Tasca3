@@ -2,6 +2,7 @@ package n1exercici1;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Iterator;
 
 public class Main {
     public static void main(String[] args) {
@@ -37,6 +38,7 @@ public class Main {
         }
         System.out.println();
 
+        System.out.println("Months printed after adding 'august':");
         months.add(7, august);
         for (Month month : months) {
             System.out.println(month.getName());
@@ -46,9 +48,17 @@ public class Main {
         months.add(december);
         HashSet<Month> monthsHashSet = new HashSet<>(months);
 
+        System.out.println("Months printed after HashSet:");
         for (Month month : monthsHashSet) {
             System.out.println(month.getName());
         }
         System.out.println();
+
+        Iterator<Month> monthsIterator = months.iterator();
+        System.out.println("Months printed with iterator:");
+        while (monthsIterator.hasNext()) {
+            System.out.print(monthsIterator.next().getName() + "\n");
+        }
+
     }
 }

@@ -34,27 +34,27 @@ public class Main {
                     answer = "Person added successfully";
                     break;
                 case 2:
-                    persons.sort(new PersonCompNameAsc());
+                    persons.sort(PersonComp.nameAsc());
                     answer = printPersons(persons);
                     break;
                 case 3:
-                    persons.sort(new PersonCompNameDesc());
+                    persons.sort(PersonComp.nameDesc());
                     answer = printPersons(persons);
                     break;
                 case 4:
-                    persons.sort(new PersonCompSurnameAsc());
+                    persons.sort(PersonComp.surnameAsc());
                     answer = printPersons(persons);
                     break;
                 case 5:
-                    persons.sort(new PersonCompSurnameDesc());
+                    persons.sort(PersonComp.surnameDesc());
                     answer = printPersons(persons);
                     break;
                 case 6:
-                    persons.sort(new PersonCompDniAsc());
+                    persons.sort(PersonComp.dniAsc());
                     answer = printPersons(persons);
                     break;
                 case 7:
-                    persons.sort(new PersonCompDniDesc());
+                    persons.sort(PersonComp.dniDesc());
                     answer = printPersons(persons);
                     break;
                 case 0:
